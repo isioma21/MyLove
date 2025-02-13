@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('Valentine.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .note {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        h1 {
+            color: red;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards 1s;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            font-weight: 300;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .heart {
+            font-size: 24px;
+            color: red;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards 3s;
+        }
+
+        .music-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            background-color: red;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards 3.5s;
+        }
+
+        .music-button:hover {
+            background-color: red;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p:nth-of-type(1) { animation: fadeIn 1s ease-out forwards 1.5s; }
+        p:nth-of-type(2) { animation: fadeIn 1s ease-out forwards 2s; }
+        p:nth-of-type(3) { animation: fadeIn 1s ease-out forwards 2.5s; }
+        p:nth-of-type(4) { animation: fadeIn 1s ease-out forwards 3s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                height: auto;
+                display: flex;
+                align-items: center;
+            }
+
+            .note {
+                padding: 20px;
+                max-width: 95%;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .heart {
+                font-size: 20px;
+            }
+
+            .music-button {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <h1>To My Forever Love ❤️</h1>
+        <p>
+            You are my heart’s greatest joy, my most beautiful dream, my sweetest reality. 
+            Every day with you is a blessing, every moment a memory I never want to forget. 
+            You are my love, my best friend, my home.  
+        </p>
+        <p>
+            With you, love isn’t just a feeling it’s laughter, comfort, and adventure. 
+            It’s finding peace in your arms, happiness in your smile, and endless joy in just being near you.  
+        </p>
+        <p>
+            I promise to love you in the little moments and the big ones, 
+            through every triumph and challenge, in the warmth of today and the hope of tomorrow.  
+        </p>
+        <p>
+            So on this special day, and always, I want you to know: 
+            You are my heart’s forever choice, my love beyond words.  
+        </p>
+        <h1 class="heart">Forever Yours My Valentine ❤️</h1>
+
+        <a href="https://music.youtube.com/watch?v=4n665GC3vfs&si=W_Dt7jjJo0CMgdmt" target="_blank" class="music-button">
+            I hope you think of me with this song 🎶
+        </a>
+    </div>
+</body>
+</html>
